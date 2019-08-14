@@ -22,6 +22,7 @@ public class Regcontroller {
 	@RequestMapping(value="load.html" , method=RequestMethod.GET)
 	public ModelAndView load()
 	{
+		int xyzx=0;
 		return new ModelAndView("sregistration","data",new Regvo());
 	}
 
