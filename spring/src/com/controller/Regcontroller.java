@@ -15,11 +15,19 @@ import com.dao.Regdao;
 public class Regcontroller {
 	@Autowired
 	Regdao d=new Regdao();
+
+
+
+
 	@RequestMapping(value="load.html" , method=RequestMethod.GET)
 	public ModelAndView load()
 	{
 		return new ModelAndView("sregistration","data",new Regvo());
 	}
+
+
+
+
 	
 	@RequestMapping(value="save.html" , method=RequestMethod.POST)
 	public ModelAndView insert(@ModelAttribute Regvo vo)
